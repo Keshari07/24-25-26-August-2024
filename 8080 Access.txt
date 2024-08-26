@@ -1,0 +1,11 @@
+Check Firewall Rules: Ensure that the firewall on 10.248.0.91 allows incoming connections on port 8080. You can check and modify ufw (Ubuntu's firewall) rules as follows:
+
+bash
+Copy code
+sudo ufw status
+sudo ufw allow 8080/tcp
+Verify Service is Running: Make sure the service on 10.248.0.91 is running and listening on port 8080. You can check with:
+
+bash
+Copy code
+sudo lsof -i :8080
